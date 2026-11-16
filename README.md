@@ -19,15 +19,15 @@ One row per week: what shipped, what slipped, what comes next.
 
 | Week | Dates | Shipped | Slipped | Next |
 |---|---|---|---|---|
-| 1 | 16 to 22 Nov 2026 | **16 Nov:** created this repo, wrote this README and [PARKING.md](PARKING.md). | | Python 3.11 + PyTorch with uv, a GPU run on Kaggle, the ML Core Anki deck |
+| 1 | 16 to 22 Nov 2026 | **16 Nov:** created this repo, wrote this README and [PARKING.md](PARKING.md). Set up Python 3.12 with uv, installed PyTorch 2.15 and NumPy; the Apple GPU (MPS) works. | | A GPU run on Kaggle, the ML Core Anki deck |
 
 ## Setup
 
-Python 3.11 or newer in a virtual environment, managed with [uv](https://docs.astral.sh/uv/):
+Python 3.12 in a virtual environment, managed with [uv](https://docs.astral.sh/uv/) (`brew install uv`):
 
 ```bash
-uv venv --python 3.11
+uv venv --python 3.12
 source .venv/bin/activate
-uv pip install torch
+uv pip install torch numpy
 python -c 'import torch; print(torch.__version__)'
 ```

@@ -1,0 +1,16 @@
+# Python virtual environment (recreate with the commands in README.md)
+.venv/
+
+# Python and Jupyter leftovers
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Datasets and model files (too big for git)
+data/
+*.pt
+*.pth
+*.ckpt
+
+# macOS
+.DS_Store
